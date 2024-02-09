@@ -5,3 +5,4 @@ i am from piduguralla
 it is working 
 sruthi
 puppy
+key moving focus
