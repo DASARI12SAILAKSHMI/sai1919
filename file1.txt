@@ -5,6 +5,7 @@ pipeline {
                 steps {
                     echo 'cat'
                     echo "git commit id : ${GIT_COMMIT}"
+                    echo "git previous commit : ${GIT_PREVIOUS_COMMIT}"           
                 }       
             }
         }
