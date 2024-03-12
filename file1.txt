@@ -4,6 +4,7 @@ pipeline {
             stage ('hloo_world')  {
                 steps {
                     echo 'cat'
+                    echo "git commit id : ${COMMIT_ID}"
                 }       
             }
         }
