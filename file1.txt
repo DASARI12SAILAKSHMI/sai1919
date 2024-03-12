@@ -9,6 +9,7 @@ pipeline {
                     echo "git previous successful commit : ${GIT_PREVIOUS_SUCCESSFUL_COMMIT}"
                     echo "git branch : ${GIT_BRANCH}"
                     echo "git local branch : ${GIT_LOCAL_BRANCH}"
+                    echo "git checkout dir : ${GIT_CHECKOUT_DIR}"
                 }       
             }
         }
