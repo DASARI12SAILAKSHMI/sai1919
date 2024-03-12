@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+        stages {
+            stage ('hloo_world')  {
+                steps {
+                    echo 'cat'
+                }       
+            }
+        }
+}
+       
