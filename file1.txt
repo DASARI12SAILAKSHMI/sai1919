@@ -7,6 +7,7 @@ pipeline {
                     echo "git commit id : ${GIT_COMMIT}"
                     echo "git previous commit : ${GIT_PREVIOUS_COMMIT}" 
                     echo "git previous successful commit : ${GIT_PREVIOUS_SUCCESSFUL_COMMIT}"
+                    echo "git branch : ${GIT_BRANCH}"
                 }       
             }
         }
