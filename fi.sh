@@ -1,15 +1,18 @@
 pipeline {
-    agent any
-
-    tools {
-        maven "Maven"
-    }
-    stages {
-        stage('Build') {
+agent any
+stages {
+    stage ('hloo') {
+        steps {
+            script {
+                echo "my first script"
+            } 
+        } 
+        stage ('stage2') {
             steps {
-                git credentialsId: 'tech', url: 'https://github.com/apache/maven.git', branch: 'master' 
-                sh "mvn clean install"
+                echo "bye"
             }
-        }
-    }
+         }
+    }
 }
+}
+    
