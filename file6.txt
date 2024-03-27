@@ -1,1 +1,18 @@
-this is content of file6.txt
+pipeline {
+    agent any
+
+    stages {
+        stage('try') {
+            steps {
+                script {
+                    try {
+                        error "haii"
+                    }
+                    catch(error) {
+                        echo "${error.message}"
+                    }
+                }    
+            }
+        }
+    }
+}
