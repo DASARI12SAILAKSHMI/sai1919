@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage(satge1) {
+            steps {
+                script {
+                    try {
+                        error 'i am creating error'
+                    }
+                    catch (error) {
+                        echo "find the error : ${error.message}"
+                    }
+                }
+            }
+        }
+    }
+}
