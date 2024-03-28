@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                git url: 'https://github.com/HouariZegai/Calculator.git', branch: 'master'
+                git url: 'https://github.com/DASARI12SAILAKSHMI/Calculator.git', branch: 'master'
             }
         }
         stage ('check') {
