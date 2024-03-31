@@ -8,3 +8,7 @@ puppy
 key moving focus
 it
 key 
+this is working time 
+i am very grate person
+i am enjoyable person
+i am very concentration person
