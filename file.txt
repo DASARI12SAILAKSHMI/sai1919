@@ -1,0 +1,25 @@
+pipeline {
+    agent any  // Runs the pipeline on any available agent (Jenkins worker)
+
+    stages {
+        stage('Build') {
+            steps {
+                // Example: Build the project (e.g., compile code)
+                sh 'mvn clean package'  // Execute Maven build
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Example: Run tests
+                sh 'mvn test'  // Execute Maven tests
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                // Example: Deploy artifacts (e.g., to a server)
+                sh 'scp target/myapp.war user@server:/path/to/deployment/'  // Example deployment using scp
+            }
+        }
+    }
